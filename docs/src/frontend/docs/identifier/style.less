@@ -6,13 +6,19 @@
 		top: 0%;
 		left: 0%;
 
-		font-weight: lighter;
-		font-size: xx-small;
+		font-weight: bold;
+		font-size: xx-large;
+
+		color: #666;
+
+		font-stretch: expanded;
 
 		.top {
 			position: fixed;
 			left: 0%;
 			top: 0%;
+			transform-origin: 0% 0%;
+			transform: scaleY(0.25) rotateY(180deg) translateX(-100%) translateY(100%) rotateX(180deg);
 		}
 
 		.right {
@@ -20,25 +26,23 @@
 			right: 0%;
 			top: 0%;
 			transform-origin: 100% 0%;
-			transform: rotateZ(270deg) translateY(-100%);
+			transform: scaleX(0.25) rotateZ(270deg) translateY(-100%);
 		}
 
 		.bottom {
 			position: fixed;
 			bottom: 0%;
 			right: 0%;
+			transform-origin: 0% 100%;
+			transform: scaleY(0.25);
 		}
 
 		.left {
 			position: fixed;
 			left: 0%;
 			bottom: 0%;
-			transform-origin: 0% 0%;
-			transform: 	rotateZ(270deg)
-						rotateY(-180deg)
-						translateY(100%)
-						rotateX(180deg)
-						translateX(-95%);
+			transform-origin: 0% 100%;
+			transform: scaleX(0.25) rotateZ(270deg) rotateX(180deg) translateX(100%) rotateY(180deg);
 		}
 	}
 }

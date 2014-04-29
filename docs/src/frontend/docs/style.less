@@ -2,9 +2,162 @@
 	body {
 		margin: 0;
 		padding: 0;
+
+		height: 100%;
+
 		overflow: hidden;
 
 		font-size: x-small;
-		font-family: 'Source Code Pro', '';
+		font-family: 'Share Tech', '';
+	}
+
+	.content {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+
+		.tactic {
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			width: 33.33%;
+			height: 100%;
+			
+			margin: 1em;
+
+			p {
+				font-size: 1.5em;
+			}
+
+			ul {
+				font-size: 1.5em;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			h2 {
+				margin-left: 2em;
+			}
+
+			.type {
+				float: left;
+				font-size: 5em;
+				text-shadow: 0 0 10px #999;
+			}
+
+			.tactic-name {
+				font-size: 3em;
+				text-align: right;
+			}
+
+			.protections {
+				margin-top: 2em;
+			}
+		}
+
+		.member {
+			position: fixed;
+			left: 33.33%;
+			width: 33.33%;
+			height: 100%;
+
+			margin: 1em;
+
+			text-align: center;
+
+			.date {
+				margin-top: 3em;
+				font-size: 2em;
+			}
+
+			.member-info {
+				margin-top: 8em;
+
+				text-align: left;
+
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+
+					li {
+						font-size: 1.5em;
+						line-height: 2em;
+					}
+				}
+			}
+		}
+
+		.domain {
+			position: fixed;
+			top: 0%;
+			right: 0%;
+			width: 33.33%;
+			height: 100%;
+
+			margin-right: 2em;
+
+			text-align: right;
+
+			.phone-number {
+				font-size: 2em;
+			}
+
+			.name {
+				font-size: 5em;
+			}
+
+			.people {
+				width: 100%;
+
+				th {
+					font-size: 1.5em;
+				}
+
+				th.rep-level {
+					text-align: center;
+				}
+
+				th.time {
+					text-align: center;
+				}
+
+				th.rep-name {
+					text-align: left;
+				}
+
+				th.location {
+					text-align: right;
+				}
+
+				td {
+					height: 1em;
+				}
+
+				td.rep-level {
+					text-align: center;
+					font-size: 2em;
+					font-weight: bold;
+				}
+
+				td.time {
+					border-bottom: solid 1px #000;
+				}
+
+				td.rep-name {
+					border: 1px solid #000;
+					border-left: none;
+					border-top: none;
+				}
+
+				td.location {
+					border: 1px solid #000;
+					border-right: none;
+					border-top: none;
+				}
+			}
+		}
 	}
 }
