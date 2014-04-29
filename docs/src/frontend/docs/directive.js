@@ -7,6 +7,7 @@ module.exports = [function() {
 		template: require('./template.html'),
 		link: function($scope, element, attributes) { },
 		controller:  ['$scope', function($scope) {
+			$scope.documentID = 'OPS / VOLS / ADVOCACY / TACTICS / PG & E / 1';
 		}]
 	};
 }];
